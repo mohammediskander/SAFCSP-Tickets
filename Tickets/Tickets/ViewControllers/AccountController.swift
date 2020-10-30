@@ -7,4 +7,11 @@
 
 import UIKit
 
-class AccountController: 
+class AccountController: UITableViewController {
+    @IBAction func handleTappedUserButton(_ sender: UIBarButtonItem) {
+        AuthenticationAPI().endPoint(route: .create)
+        
+        
+//        print(UserDefaults.standard.string)
+    }
+}

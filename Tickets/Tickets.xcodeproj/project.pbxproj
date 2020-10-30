@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,30 @@
 		2C06FE2225423E2D00C20BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C06FE2025423E2D00C20BEA /* Main.storyboard */; };
 		2C06FE2425423E2F00C20BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C06FE2325423E2F00C20BEA /* Assets.xcassets */; };
 		2C06FE2725423E2F00C20BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C06FE2525423E2F00C20BEA /* LaunchScreen.storyboard */; };
+		2C06FE352542432600C20BEA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06FE342542432600C20BEA /* Card.swift */; };
+		2C06FE3925432EEC00C20BEA /* TicketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06FE3825432EEC00C20BEA /* TicketsController.swift */; };
+		2C0F367F2544ABC000A97471 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F367E2544ABC000A97471 /* Authentication.swift */; };
+		2C0F36822544DD2100A97471 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F36812544DD2100A97471 /* UserModel.swift */; };
+		2C37F5E525473EA70020B8E0 /* RoleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5E425473EA70020B8E0 /* RoleModel.swift */; };
+		2C37F5E925474EAF0020B8E0 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5E825474EAF0020B8E0 /* AccountController.swift */; };
+		2C37F5ED25476FA30020B8E0 /* _Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5EC25476FA30020B8E0 /* _Router.swift */; };
+		2C37F5F5254778E30020B8E0 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5F4254778E30020B8E0 /* AuthenticationRouter.swift */; };
+		2C37F5F92547F4280020B8E0 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5F82547F4280020B8E0 /* UserRouter.swift */; };
+		2C37F5FD2547F45B0020B8E0 /* RouterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5FC2547F45B0020B8E0 /* RouterConfiguration.swift */; };
+		2C37F6022547F54E0020B8E0 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F6012547F54E0020B8E0 /* Environment.swift */; };
+		2C37F6052547F6100020B8E0 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F6042547F6100020B8E0 /* EnvironmentConfiguration.swift */; };
+		2C37F609254807790020B8E0 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F608254807790020B8E0 /* Alamofire.swift */; };
+		2C37F60D254815570020B8E0 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F60C254815570020B8E0 /* Error.swift */; };
+		2C37F610254831260020B8E0 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C37F60F254831260020B8E0 /* Authentication.storyboard */; };
+		2C37F6132548350C0020B8E0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F6122548350C0020B8E0 /* LoginController.swift */; };
+		2C37F616254899140020B8E0 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F615254899140020B8E0 /* RegisterController.swift */; };
+		2C9FAC8C25446D87001A41A1 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FAC8B25446D87001A41A1 /* Root.swift */; };
+		2C9FAC932544883F001A41A1 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FAC922544883F001A41A1 /* UserAPI.swift */; };
+		6C20EE18BB4922290DC19F4C /* Pods_Tickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24D2549B93E32E00CEDA945 /* Pods_Tickets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22CB7BF3A7CB7D2D32FE1C89 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
 		2C06FE1725423E2D00C20BEA /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C06FE1A25423E2D00C20BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C06FE1C25423E2D00C20BEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +45,27 @@
 		2C06FE2325423E2F00C20BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C06FE2625423E2F00C20BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C06FE2825423E2F00C20BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C06FE342542432600C20BEA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2C06FE3825432EEC00C20BEA /* TicketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsController.swift; sourceTree = "<group>"; };
+		2C0F367E2544ABC000A97471 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		2C0F36812544DD2100A97471 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2C37F5E425473EA70020B8E0 /* RoleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleModel.swift; sourceTree = "<group>"; };
+		2C37F5E825474EAF0020B8E0 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
+		2C37F5EC25476FA30020B8E0 /* _Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Router.swift; sourceTree = "<group>"; };
+		2C37F5F4254778E30020B8E0 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
+		2C37F5F82547F4280020B8E0 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		2C37F5FC2547F45B0020B8E0 /* RouterConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterConfiguration.swift; sourceTree = "<group>"; };
+		2C37F6012547F54E0020B8E0 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		2C37F6042547F6100020B8E0 /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
+		2C37F608254807790020B8E0 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		2C37F60C254815570020B8E0 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		2C37F60F254831260020B8E0 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		2C37F6122548350C0020B8E0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		2C37F615254899140020B8E0 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		2C9FAC8B25446D87001A41A1 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		2C9FAC922544883F001A41A1 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		5532A690AD2E2ED060775D19 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
+		D24D2549B93E32E00CEDA945 /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tickets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C20EE18BB4922290DC19F4C /* Pods_Tickets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +85,8 @@
 			children = (
 				2C06FE1925423E2D00C20BEA /* Tickets */,
 				2C06FE1825423E2D00C20BEA /* Products */,
+				87B3791AFBAD67E52AFC5B74 /* Pods */,
+				497D75F340A6A4C44B48E67C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +101,14 @@
 		2C06FE1925423E2D00C20BEA /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
+				2C37F6072548076D0020B8E0 /* Extensions */,
+				2C37F5FB2547F43D0020B8E0 /* Protocols */,
+				2C9FAC8925446D0F001A41A1 /* APIs */,
+				2C06FE332542430700C20BEA /* Models */,
+				2C06FE322542430100C20BEA /* Views */,
+				2C06FE31254242F900C20BEA /* Utilites */,
+				2C06FE30254242F300C20BEA /* Stores */,
+				2C06FE2F254242E600C20BEA /* ViewControllers */,
 				2C06FE1A25423E2D00C20BEA /* AppDelegate.swift */,
 				2C06FE1C25423E2D00C20BEA /* SceneDelegate.swift */,
 				2C06FE1E25423E2D00C20BEA /* ViewController.swift */,
@@ -63,8 +116,100 @@
 				2C06FE2325423E2F00C20BEA /* Assets.xcassets */,
 				2C06FE2525423E2F00C20BEA /* LaunchScreen.storyboard */,
 				2C06FE2825423E2F00C20BEA /* Info.plist */,
+				2C37F60F254831260020B8E0 /* Authentication.storyboard */,
 			);
 			path = Tickets;
+			sourceTree = "<group>";
+		};
+		2C06FE2F254242E600C20BEA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C06FE3825432EEC00C20BEA /* TicketsController.swift */,
+				2C37F5E825474EAF0020B8E0 /* AccountController.swift */,
+				2C37F6122548350C0020B8E0 /* LoginController.swift */,
+				2C37F615254899140020B8E0 /* RegisterController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2C06FE30254242F300C20BEA /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		2C06FE31254242F900C20BEA /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		2C06FE322542430100C20BEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C06FE342542432600C20BEA /* Card.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C06FE332542430700C20BEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C0F36812544DD2100A97471 /* UserModel.swift */,
+				2C37F5E425473EA70020B8E0 /* RoleModel.swift */,
+				2C37F6012547F54E0020B8E0 /* Environment.swift */,
+				2C37F60C254815570020B8E0 /* Error.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C37F5FB2547F43D0020B8E0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2C37F5FC2547F45B0020B8E0 /* RouterConfiguration.swift */,
+				2C37F6042547F6100020B8E0 /* EnvironmentConfiguration.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2C37F6072548076D0020B8E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C37F608254807790020B8E0 /* Alamofire.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C9FAC8925446D0F001A41A1 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				2C9FAC8B25446D87001A41A1 /* Root.swift */,
+				2C9FAC922544883F001A41A1 /* UserAPI.swift */,
+				2C0F367E2544ABC000A97471 /* Authentication.swift */,
+				2C37F5EC25476FA30020B8E0 /* _Router.swift */,
+				2C37F5F4254778E30020B8E0 /* AuthenticationRouter.swift */,
+				2C37F5F82547F4280020B8E0 /* UserRouter.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		497D75F340A6A4C44B48E67C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D24D2549B93E32E00CEDA945 /* Pods_Tickets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87B3791AFBAD67E52AFC5B74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22CB7BF3A7CB7D2D32FE1C89 /* Pods-Tickets.debug.xcconfig */,
+				5532A690AD2E2ED060775D19 /* Pods-Tickets.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C06FE2B25423E2F00C20BEA /* Build configuration list for PBXNativeTarget "Tickets" */;
 			buildPhases = (
+				37EB8B1E539ADA3964E2BE38 /* [CP] Check Pods Manifest.lock */,
 				2C06FE1325423E2D00C20BEA /* Sources */,
 				2C06FE1425423E2D00C20BEA /* Frameworks */,
 				2C06FE1525423E2D00C20BEA /* Resources */,
+				32DB85C9B6138CAB6ED42B04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C37F610254831260020B8E0 /* Authentication.storyboard in Resources */,
 				2C06FE2725423E2F00C20BEA /* LaunchScreen.storyboard in Resources */,
 				2C06FE2425423E2F00C20BEA /* Assets.xcassets in Resources */,
 				2C06FE2225423E2D00C20BEA /* Main.storyboard in Resources */,
@@ -132,14 +280,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32DB85C9B6138CAB6ED42B04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tickets/Pods-Tickets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tickets/Pods-Tickets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tickets/Pods-Tickets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37EB8B1E539ADA3964E2BE38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tickets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C06FE1325423E2D00C20BEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2C06FE1F25423E2D00C20BEA /* ViewController.swift in Sources */,
+				2C37F6022547F54E0020B8E0 /* Environment.swift in Sources */,
+				2C37F5FD2547F45B0020B8E0 /* RouterConfiguration.swift in Sources */,
 				2C06FE1B25423E2D00C20BEA /* AppDelegate.swift in Sources */,
+				2C06FE3925432EEC00C20BEA /* TicketsController.swift in Sources */,
 				2C06FE1D25423E2D00C20BEA /* SceneDelegate.swift in Sources */,
+				2C37F609254807790020B8E0 /* Alamofire.swift in Sources */,
+				2C37F5ED25476FA30020B8E0 /* _Router.swift in Sources */,
+				2C06FE352542432600C20BEA /* Card.swift in Sources */,
+				2C37F6132548350C0020B8E0 /* LoginController.swift in Sources */,
+				2C0F36822544DD2100A97471 /* UserModel.swift in Sources */,
+				2C9FAC8C25446D87001A41A1 /* Root.swift in Sources */,
+				2C9FAC932544883F001A41A1 /* UserAPI.swift in Sources */,
+				2C37F5E525473EA70020B8E0 /* RoleModel.swift in Sources */,
+				2C0F367F2544ABC000A97471 /* Authentication.swift in Sources */,
+				2C37F5F92547F4280020B8E0 /* UserRouter.swift in Sources */,
+				2C37F5E925474EAF0020B8E0 /* AccountController.swift in Sources */,
+				2C37F6052547F6100020B8E0 /* EnvironmentConfiguration.swift in Sources */,
+				2C37F616254899140020B8E0 /* RegisterController.swift in Sources */,
+				2C37F5F5254778E30020B8E0 /* AuthenticationRouter.swift in Sources */,
+				2C37F60D254815570020B8E0 /* Error.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +491,7 @@
 		};
 		2C06FE2C25423E2F00C20BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22CB7BF3A7CB7D2D32FE1C89 /* Pods-Tickets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +511,7 @@
 		};
 		2C06FE2D25423E2F00C20BEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5532A690AD2E2ED060775D19 /* Pods-Tickets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

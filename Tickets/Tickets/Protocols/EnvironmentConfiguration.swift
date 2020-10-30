@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol EnvironmentConfiguration {
+    var baseURL: String { get }
+    static var port: Int? { get }
+}

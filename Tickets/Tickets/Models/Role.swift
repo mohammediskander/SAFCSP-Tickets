@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct Role: Codable {
+    let name: String
+    let date: Date
+    let priviliges: [Privilige]
+}
+
+struct Privilige: Codable {
+    let model: String
+    let accessRight: [String: Bool]
+}

@@ -31,11 +31,11 @@ class RegisterController: UIViewController, UITextViewDelegate {
         emailField.layer.masksToBounds = true
         emailField.backgroundColor = .systemGray6
         
-        emailField.layer.cornerRadius = emailField.frame.height / 2
-        emailField.setLeftPaddingPoints(10)
-        emailField.setRightPaddingPoints(10)
-        emailField.layer.masksToBounds = true
-        emailField.backgroundColor = .systemGray6
+        passwordField.layer.cornerRadius = passwordField.frame.height / 2
+        passwordField.setLeftPaddingPoints(10)
+        passwordField.setRightPaddingPoints(10)
+        passwordField.layer.masksToBounds = true
+        passwordField.backgroundColor = .systemGray6
     }
     
     @IBAction func handleTappedRegisterButton(_ sender: UIButton) {

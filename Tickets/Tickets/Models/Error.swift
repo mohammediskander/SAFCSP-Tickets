@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct ErrorResponse: Codable, Error {
+    let name: String
+    let statusCode: Int
+    let stack: String?
+}
+
+enum ErrorType: Error {
+    case backendError
+    case alamofireError
+}
