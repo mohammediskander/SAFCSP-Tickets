@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         
-        
         do {
             AF.responseWithData(try AuthenticationRouter.validate.asURLRequest(), type: SuccessResponse.self) { [weak self]
                 data, error in
