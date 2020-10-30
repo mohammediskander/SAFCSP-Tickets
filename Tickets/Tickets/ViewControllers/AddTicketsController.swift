@@ -11,7 +11,7 @@ class AddTicketsController: UIViewController {
     
     
     let letters = "A"..."z"
-//    let arabicLetters = "ا"..."ي"
+    let numbers = 0...9
 
     
     @IBOutlet var ticketNameField: UITextField!
@@ -34,27 +34,45 @@ class AddTicketsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 }
 
 
-extension AddTicketsController: UITextFieldDelegate {
+extension AddTicketsController: UITextFieldDelegate, UITextPasteDelegate {
     
     
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
+        guard string != "" else {
+            return true
+        }
+        
+        guard string.count <= 1 else {
+            return false
+        }
+        
+        
         guard textField != carsLicensePlateNumbersTextField1,
               textField != carsLicensePlateNumbersTextField2,
               textField != carsLicensePlateNumbersTextField3,
               textField != carsLicensePlateNumbersTextField4 else {
-            guard let count = textField.text?.count, count <= 1 else {
+            
+            guard let count = textField.text?.count, count < 1 else {
                 return false
             }
             
-            guard repl else {
-                <#statements#>
+            guard let char = string.first else {
+                return false
+            }
+            guard let numb = Int("\(char)") else {
+                return false
+
+            }
+            
+            guard numbers.contains(numb) else {
+                return false
+
             }
             
             return true
@@ -65,18 +83,17 @@ extension AddTicketsController: UITextFieldDelegate {
               textField != carsLicensePlateLettersTextField2,
               textField != carsLicensePlateLettersTextField3 else {
             
-            guard let count = textField.text?.count else {
+            guard let count = textField.text?.count, count < 1 else {
                 return false
             }
             
-            
+            guard letters.contains(string) else {
+                return false
+            }
+                        
             return true
         }
         
-        
-        
         return true
     }
-    
-    
 }
