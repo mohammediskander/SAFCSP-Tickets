@@ -31,7 +31,12 @@ class TicketsController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewDidLoad() {
         tableView.rowHeight = 200
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(toAddTickets(_:)))
+
 //        UserAPI().endPoint(route: .create)
+    }
+    
+    @objc func toAddTickets(_ sender: UIViewController){
+        performSegue(withIdentifier: "toAddTickets", sender: nil)
     }
 }
