@@ -9,12 +9,25 @@ import UIKit
 import Alamofire
 
 class LoginController: UIViewController, UITextViewDelegate {
+    
+    
     @IBOutlet var emailField: UITextField!
+    
+//    var imageView = UIImageView()
+//    var image = UIImage(named: "user.png")
+
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var submitButton: UIButton!
+    @IBOutlet var userLogo: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        
+//        emailField.leftViewMode = UITextField.ViewMode.always
+//        emailField.leftViewMode = .always
+        
         
         submitButton.layer.cornerRadius = submitButton.frame.height / 2
         
@@ -22,10 +35,14 @@ class LoginController: UIViewController, UITextViewDelegate {
         emailField.setLeftPaddingPoints(10)
         emailField.setRightPaddingPoints(10)
         emailField.layer.masksToBounds = true
-        emailField.backgroundColor = .systemGray6
+        emailField.borderStyle = .none
+        
+        emailField.useUnderline()
         
         passwordField.layer.cornerRadius = passwordField.frame.height / 2
-        passwordField.backgroundColor = .systemGray6
+//        passwordField.backgroundColor = .systemGray6
+        passwordField.borderStyle = .none
+        passwordField.useUnderline()
         passwordField.layer.masksToBounds = true
         passwordField.setLeftPaddingPoints(10)
         passwordField.setRightPaddingPoints(10)
@@ -65,5 +82,42 @@ extension UITextField {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
         self.rightView = paddingView
         self.rightViewMode = .always
+    }
+}
+
+
+extension UITextField {
+
+    func useUnderline() {
+        let border = CALayer()
+        let borderWidth = CGFloat(1.0)
+        border.borderColor = UIColor.lightGray.cgColor
+        border.frame = CGRect(origin: CGPoint(x: 0,y :self.frame.size.height - borderWidth), size: CGSize(width: self.frame.size.width, height: self.frame.size.height))
+        border.borderWidth = borderWidth
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+    }
+}
+
+extension UITextField{
+
+    func setLeftImage(imageName:String) {
+
+        let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: 1, height: 1))
+        imageView.image = UIImage(named: imageName)
+        self.leftView = imageView;
+        self.leftViewMode = .always
+    }
+}
+
+extension UIImageView{
+    func useUnderline() {
+        let border = CALayer()
+        let borderWidth = CGFloat(1.0)
+        border.borderColor = UIColor.lightGray.cgColor
+        border.frame = CGRect(origin: CGPoint(x: 0,y :self.frame.size.height - borderWidth), size: CGSize(width: self.frame.size.width, height: self.frame.size.height))
+        border.borderWidth = borderWidth
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
     }
 }

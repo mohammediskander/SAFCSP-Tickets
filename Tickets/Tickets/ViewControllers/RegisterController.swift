@@ -57,4 +57,9 @@ class RegisterController: UIViewController, UITextViewDelegate {
         }
     }
     
+    @IBAction func dissmissME(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
