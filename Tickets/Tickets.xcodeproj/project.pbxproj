@@ -17,11 +17,9 @@
 		2C06FE2725423E2F00C20BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C06FE2525423E2F00C20BEA /* LaunchScreen.storyboard */; };
 		2C06FE352542432600C20BEA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06FE342542432600C20BEA /* Card.swift */; };
 		2C06FE3925432EEC00C20BEA /* TicketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06FE3825432EEC00C20BEA /* TicketsController.swift */; };
-		2C0F367F2544ABC000A97471 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F367E2544ABC000A97471 /* Authentication.swift */; };
 		2C0F36822544DD2100A97471 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F36812544DD2100A97471 /* UserModel.swift */; };
 		2C37F5E525473EA70020B8E0 /* RoleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5E425473EA70020B8E0 /* RoleModel.swift */; };
 		2C37F5E925474EAF0020B8E0 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5E825474EAF0020B8E0 /* AccountController.swift */; };
-		2C37F5ED25476FA30020B8E0 /* _Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5EC25476FA30020B8E0 /* _Router.swift */; };
 		2C37F5F5254778E30020B8E0 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5F4254778E30020B8E0 /* AuthenticationRouter.swift */; };
 		2C37F5F92547F4280020B8E0 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5F82547F4280020B8E0 /* UserRouter.swift */; };
 		2C37F5FD2547F45B0020B8E0 /* RouterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F5FC2547F45B0020B8E0 /* RouterConfiguration.swift */; };
@@ -33,8 +31,6 @@
 		2C37F6132548350C0020B8E0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F6122548350C0020B8E0 /* LoginController.swift */; };
 		2C37F616254899140020B8E0 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F615254899140020B8E0 /* RegisterController.swift */; };
 		2C8D5A1C254D9213002D3E22 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D5A1B254D9213002D3E22 /* TextField.swift */; };
-		2C9FAC8C25446D87001A41A1 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FAC8B25446D87001A41A1 /* Root.swift */; };
-		2C9FAC932544883F001A41A1 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FAC922544883F001A41A1 /* UserAPI.swift */; };
 		6C20EE18BB4922290DC19F4C /* Pods_Tickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24D2549B93E32E00CEDA945 /* Pods_Tickets.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,11 +48,9 @@
 		2C06FE2825423E2F00C20BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C06FE342542432600C20BEA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2C06FE3825432EEC00C20BEA /* TicketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsController.swift; sourceTree = "<group>"; };
-		2C0F367E2544ABC000A97471 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		2C0F36812544DD2100A97471 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2C37F5E425473EA70020B8E0 /* RoleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleModel.swift; sourceTree = "<group>"; };
 		2C37F5E825474EAF0020B8E0 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
-		2C37F5EC25476FA30020B8E0 /* _Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Router.swift; sourceTree = "<group>"; };
 		2C37F5F4254778E30020B8E0 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
 		2C37F5F82547F4280020B8E0 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
 		2C37F5FC2547F45B0020B8E0 /* RouterConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterConfiguration.swift; sourceTree = "<group>"; };
@@ -68,8 +62,6 @@
 		2C37F6122548350C0020B8E0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2C37F615254899140020B8E0 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		2C8D5A1B254D9213002D3E22 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		2C9FAC8B25446D87001A41A1 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
-		2C9FAC922544883F001A41A1 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		5532A690AD2E2ED060775D19 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
 		D24D2549B93E32E00CEDA945 /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tickets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,10 +185,6 @@
 		2C9FAC8925446D0F001A41A1 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				2C9FAC8B25446D87001A41A1 /* Root.swift */,
-				2C9FAC922544883F001A41A1 /* UserAPI.swift */,
-				2C0F367E2544ABC000A97471 /* Authentication.swift */,
-				2C37F5EC25476FA30020B8E0 /* _Router.swift */,
 				2C37F5F4254778E30020B8E0 /* AuthenticationRouter.swift */,
 				2C37F5F82547F4280020B8E0 /* UserRouter.swift */,
 				1EE853FB254CC74A0011287E /* TicketRouter.swift */,
@@ -344,15 +332,11 @@
 				2C06FE3925432EEC00C20BEA /* TicketsController.swift in Sources */,
 				2C06FE1D25423E2D00C20BEA /* SceneDelegate.swift in Sources */,
 				2C37F609254807790020B8E0 /* Alamofire.swift in Sources */,
-				2C37F5ED25476FA30020B8E0 /* _Router.swift in Sources */,
 				2C06FE352542432600C20BEA /* Card.swift in Sources */,
 				2C37F6132548350C0020B8E0 /* LoginController.swift in Sources */,
 				2C0F36822544DD2100A97471 /* UserModel.swift in Sources */,
-				2C9FAC8C25446D87001A41A1 /* Root.swift in Sources */,
 				1EE853F8254C7EF20011287E /* AddTicketsController.swift in Sources */,
-				2C9FAC932544883F001A41A1 /* UserAPI.swift in Sources */,
 				2C37F5E525473EA70020B8E0 /* RoleModel.swift in Sources */,
-				2C0F367F2544ABC000A97471 /* Authentication.swift in Sources */,
 				2C37F5F92547F4280020B8E0 /* UserRouter.swift in Sources */,
 				2C37F5E925474EAF0020B8E0 /* AccountController.swift in Sources */,
 				2C37F6052547F6100020B8E0 /* EnvironmentConfiguration.swift in Sources */,

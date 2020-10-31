@@ -27,9 +27,6 @@ class AuthenticationAPI {
         
         AF.request(url, method: .post, headers: []) .response {
             response in
-            print("@@@@@@@@@@@@@@@@@@@@@@@@@")
-            print(response.request?.headers)
-            print(response.response?.headers)
             OperationQueue.main.addOperation {
                 callback(response.result)
             }
