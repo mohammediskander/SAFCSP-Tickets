@@ -10,20 +10,20 @@ import Alamofire
 
 class AddTicketsController: UIViewController {
     
-    @IBOutlet var ticketNameField: UITextField!
-    @IBOutlet var driversNameTextField: UITextField!
-    @IBOutlet var carsModelTextField: UITextField!
+    @IBOutlet var ticketNameField: TextField!
+    @IBOutlet var driversNameTextField: TextField!
+    @IBOutlet var carsModelTextField: TextField!
     
-    @IBOutlet var carsLicensePlateNumbersTextField1: UITextField!
-    @IBOutlet var carsLicensePlateNumbersTextField2: UITextField!
-    @IBOutlet var carsLicensePlateNumbersTextField3: UITextField!
-    @IBOutlet var carsLicensePlateNumbersTextField4: UITextField!
+    @IBOutlet var carsLicensePlateNumbersTextField1: TextField!
+    @IBOutlet var carsLicensePlateNumbersTextField2: TextField!
+    @IBOutlet var carsLicensePlateNumbersTextField3: TextField!
+    @IBOutlet var carsLicensePlateNumbersTextField4: TextField!
 
-    @IBOutlet var carsLicensePlateLettersTextField1: UITextField!
-    @IBOutlet var carsLicensePlateLettersTextField2: UITextField!
-    @IBOutlet var carsLicensePlateLettersTextField3: UITextField!
+    @IBOutlet var carsLicensePlateLettersTextField1: TextField!
+    @IBOutlet var carsLicensePlateLettersTextField2: TextField!
+    @IBOutlet var carsLicensePlateLettersTextField3: TextField!
 
-    @IBOutlet var carsColorTextField: UITextField!
+    @IBOutlet var carsColorTextField: TextField!
     
     @IBOutlet var datePicker: UIDatePicker!
     @IBOutlet var ticketType: UIPickerView!
@@ -31,27 +31,9 @@ class AddTicketsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         datePicker.minimumDate = Date()
-        setUpTextField()
     }
-    
-    func setUpTextField() {
-        ticketNameField.layer.cornerRadius = 5
-        driversNameTextField.layer.cornerRadius = 5
-        carsModelTextField.layer.cornerRadius = 5
-        carsLicensePlateNumbersTextField1.layer.cornerRadius = 5
-        carsLicensePlateNumbersTextField2.layer.cornerRadius = 5
-        carsLicensePlateNumbersTextField3.layer.cornerRadius = 5
-        carsLicensePlateNumbersTextField4.layer.cornerRadius = 5
-        carsLicensePlateLettersTextField1.layer.cornerRadius = 5
-        carsLicensePlateLettersTextField2.layer.cornerRadius = 5
-        carsLicensePlateLettersTextField3.layer.cornerRadius = 5
-        carsColorTextField.layer.cornerRadius = 5
-    }
-    
     
     @IBAction func addTicketButtonPressed(_ sender: UIButton) {
-        
-        validateFields()
         
         guard let ticketName = ticketNameField.text, !ticketName.isEmpty,
               let ticketType = TicketType(id: ticketType.selectedRow(inComponent: 0)),
@@ -102,67 +84,18 @@ class AddTicketsController: UIViewController {
         
     }
     
-    func validateFields(){
-        
-        
-        if let text = ticketNameField.text , text.isEmpty {
-            showError(forTextField: ticketNameField)
-        }
-        
-        if let text = driversNameTextField.text , text.isEmpty {
-            showError(forTextField: driversNameTextField)
-        }
-        
-        if let text = carsModelTextField.text , text.isEmpty {
-            showError(forTextField: carsModelTextField)
-        }
-        
-        if let text = carsColorTextField.text , text.isEmpty {
-            showError(forTextField: carsColorTextField)
-        }
-        
-        if let text = carsLicensePlateLettersTextField1.text , text.isEmpty {
-            showError(forTextField: carsLicensePlateLettersTextField1)
-        }
-        
-        if let text = carsLicensePlateLettersTextField2.text , text.isEmpty {
-            showError(forTextField: carsLicensePlateLettersTextField2)
-        }
-        
-        if let text = carsLicensePlateLettersTextField3.text , text.isEmpty {
-            showError(forTextField: carsLicensePlateLettersTextField3)
-        }
-        
-        if let text = carsLicensePlateNumbersTextField1.text , text.isEmpty {
-            showError(forTextField: carsLicensePlateNumbersTextField1)
-        }
-        
-        if let text = carsLicensePlateNumbersTextField2.text , text.isEmpty {
-            showError(forTextField: carsLicensePlateNumbersTextField2)
-        }
-        
-        if let text = carsLicensePlateNumbersTextField3.text , text.isEmpty {
-            showError(forTextField: carsLicensePlateNumbersTextField3)
-        }
-        
-        if let text = carsLicensePlateNumbersTextField4.text , text.isEmpty {
-            showError(forTextField: carsLicensePlateNumbersTextField4)
-        }
-        
-    }
-    
-    func showError(forTextField textField: UITextField){
-        textField.layer.borderWidth = 0.5
-        textField.layer.masksToBounds = true
-        textField.layer.borderColor = UIColor.red.cgColor
-    }
-    
 }
 
 
 extension AddTicketsController: UITextFieldDelegate, UITextPasteDelegate {
     
-    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let textField = textField as? TextField else {
+            return
+        }
+        
+        textField.validate()
+    }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         

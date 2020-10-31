@@ -32,6 +32,7 @@
 		2C37F610254831260020B8E0 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C37F60F254831260020B8E0 /* Authentication.storyboard */; };
 		2C37F6132548350C0020B8E0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F6122548350C0020B8E0 /* LoginController.swift */; };
 		2C37F616254899140020B8E0 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37F615254899140020B8E0 /* RegisterController.swift */; };
+		2C8D5A1C254D9213002D3E22 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D5A1B254D9213002D3E22 /* TextField.swift */; };
 		2C9FAC8C25446D87001A41A1 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FAC8B25446D87001A41A1 /* Root.swift */; };
 		2C9FAC932544883F001A41A1 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FAC922544883F001A41A1 /* UserAPI.swift */; };
 		6C20EE18BB4922290DC19F4C /* Pods_Tickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24D2549B93E32E00CEDA945 /* Pods_Tickets.framework */; };
@@ -66,6 +67,7 @@
 		2C37F60F254831260020B8E0 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		2C37F6122548350C0020B8E0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2C37F615254899140020B8E0 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		2C8D5A1B254D9213002D3E22 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		2C9FAC8B25446D87001A41A1 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		2C9FAC922544883F001A41A1 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		5532A690AD2E2ED060775D19 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				2C06FE342542432600C20BEA /* Card.swift */,
+				2C8D5A1B254D9213002D3E22 /* TextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				2C06FE1F25423E2D00C20BEA /* ViewController.swift in Sources */,
 				2C37F6022547F54E0020B8E0 /* Environment.swift in Sources */,
 				2C37F5FD2547F45B0020B8E0 /* RouterConfiguration.swift in Sources */,
+				2C8D5A1C254D9213002D3E22 /* TextField.swift in Sources */,
 				2C06FE1B25423E2D00C20BEA /* AppDelegate.swift in Sources */,
 				2C06FE3925432EEC00C20BEA /* TicketsController.swift in Sources */,
 				2C06FE1D25423E2D00C20BEA /* SceneDelegate.swift in Sources */,
