@@ -11,14 +11,14 @@ import Alamofire
 class LoginController: UIViewController, UITextViewDelegate {
     
     
-    @IBOutlet var emailField: UITextField!
+    @IBOutlet var emailField: CustomTextFieldwIcon!
     
 //    var imageView = UIImageView()
 //    var image = UIImage(named: "user.png")
 
-    @IBOutlet var passwordField: UITextField!
-    @IBOutlet var submitButton: UIButton!
-    @IBOutlet var userLogo: UIImageView!
+    @IBOutlet var passwordField: CustomTextFieldwIcon!
+    @IBOutlet var submitButton: CustomButton!
+//    @IBOutlet var userLogo: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,28 +32,28 @@ class LoginController: UIViewController, UITextViewDelegate {
         submitButton.layer.cornerRadius = submitButton.frame.height / 2
         
         emailField.layer.cornerRadius = emailField.frame.height / 2
-        emailField.setLeftPaddingPoints(10)
-        emailField.setRightPaddingPoints(10)
+//        emailField.setLeftPaddingPoints(10)
+//        emailField.setRightPaddingPoints(10)
         emailField.layer.masksToBounds = true
-        emailField.borderStyle = .none
-        
-        emailField.useUnderline()
+//        emailField.borderStyle = .none
+//
+//        emailField.useUnderline()
         
         passwordField.layer.cornerRadius = passwordField.frame.height / 2
 //        passwordField.backgroundColor = .systemGray6
-        passwordField.borderStyle = .none
-        passwordField.useUnderline()
+//        passwordField.borderStyle = .none
+//        passwordField.useUnderline()
         passwordField.layer.masksToBounds = true
-        passwordField.setLeftPaddingPoints(10)
-        passwordField.setRightPaddingPoints(10)
+//        passwordField.setLeftPaddingPoints(10)
+//        passwordField.setRightPaddingPoints(10)
         
     }
     
     @IBAction func handleTappedLoginButton(_ sender: UIButton) {
-        print("email: \(String(describing: emailField.text ?? ""))")
-        print("password: \(String(describing: passwordField.text ?? ""))")
+//        print("email: \(String(describing: emailField.text ?? ""))")
+//        print("password: \(String(describing: passwordField.text ?? ""))")
         
-        AF.responseWithData(AuthenticationRouter.create(email: emailField.text ?? "", password: passwordField.text ?? ""), type: SuccessResponse.self) {
+        AF.responseWithData(AuthenticationRouter.create(email: emailField.text, password: passwordField.text), type: SuccessResponse.self) {
             data, error in
             
             guard let data = data else {
