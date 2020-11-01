@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" red="0.078438870610000003" green="0.078375749290000005" blue="0.082353539759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TeN-iU-8qr" userLabel="Form Stack View">
-                                <rect key="frame" x="15" y="298.5" width="384" height="299"/>
+                                <rect key="frame" x="15" y="562" width="384" height="200"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zRf-Vw-Pt7" userLabel="Email Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="30"/>
@@ -66,11 +66,15 @@
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="J31-JH-rry" secondAttribute="trailing" id="JoW-w8-0R3"/>
+                                                    <constraint firstItem="J31-JH-rry" firstAttribute="leading" secondItem="Uz7-qy-814" secondAttribute="trailing" id="gUc-zq-6YS"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4q-Sn-53a">
-                                        <rect key="frame" x="0.0" y="90" width="384" height="44"/>
+                                        <rect key="frame" x="0.0" y="90" width="38" height="44"/>
                                         <color key="backgroundColor" systemColor="systemFillColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="eAX-GQ-jWt"/>
@@ -84,7 +88,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sj-Au-Lip">
-                                        <rect key="frame" x="0.0" y="149" width="301" height="150"/>
+                                        <rect key="frame" x="0.0" y="149" width="301" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0I6-k2-qoq">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="20"/>
@@ -107,24 +111,24 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="VKz-ir-3L0" secondAttribute="trailing" id="97m-sM-aac"/>
-                                    <constraint firstAttribute="trailing" secondItem="4Sj-Au-Lip" secondAttribute="trailing" constant="83" id="Tl2-aQ-EFb"/>
-                                    <constraint firstAttribute="trailing" secondItem="d4q-Sn-53a" secondAttribute="trailing" id="i6N-sw-un8"/>
-                                    <constraint firstAttribute="trailing" secondItem="zRf-Vw-Pt7" secondAttribute="trailing" id="vXr-5W-5UD"/>
+                                    <constraint firstItem="Uz7-qy-814" firstAttribute="width" secondItem="3rm-lx-0Sv" secondAttribute="width" id="9tl-sr-cvf"/>
+                                    <constraint firstAttribute="height" constant="200" id="GXW-br-3mw"/>
+                                    <constraint firstAttribute="trailing" secondItem="zRf-Vw-Pt7" secondAttribute="trailing" id="bF1-23-yqO"/>
+                                    <constraint firstItem="VKz-ir-3L0" firstAttribute="leading" secondItem="TeN-iU-8qr" secondAttribute="leading" id="ebe-RL-N34"/>
+                                    <constraint firstAttribute="trailing" secondItem="VKz-ir-3L0" secondAttribute="trailing" id="jsZ-yc-xUK"/>
+                                    <constraint firstItem="zRf-Vw-Pt7" firstAttribute="leading" secondItem="TeN-iU-8qr" secondAttribute="leading" id="ssg-FU-NbN"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WAY-Ct-BwJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WAY-Ct-BwJ" firstAttribute="trailing" secondItem="TeN-iU-8qr" secondAttribute="trailing" constant="15" id="7g3-0r-F1f"/>
+                            <constraint firstItem="WAY-Ct-BwJ" firstAttribute="bottom" secondItem="TeN-iU-8qr" secondAttribute="bottom" constant="100" id="1GQ-Nd-JV1"/>
+                            <constraint firstItem="WAY-Ct-BwJ" firstAttribute="trailing" secondItem="TeN-iU-8qr" secondAttribute="trailing" constant="15" id="3Qn-4K-tP1"/>
                             <constraint firstItem="ohL-iv-rpY" firstAttribute="leading" secondItem="rXq-cw-fLL" secondAttribute="leading" id="DaP-Zo-0nl"/>
-                            <constraint firstItem="TeN-iU-8qr" firstAttribute="centerY" secondItem="rXq-cw-fLL" secondAttribute="centerY" id="Fje-6T-aNQ"/>
-                            <constraint firstItem="TeN-iU-8qr" firstAttribute="centerX" secondItem="rXq-cw-fLL" secondAttribute="centerX" id="HB1-9U-OYW"/>
                             <constraint firstAttribute="trailing" secondItem="ohL-iv-rpY" secondAttribute="trailing" constant="-1" id="JKh-l8-mfi"/>
-                            <constraint firstItem="TeN-iU-8qr" firstAttribute="top" secondItem="WAY-Ct-BwJ" secondAttribute="top" constant="254.5" id="LaK-4Y-TIf"/>
                             <constraint firstAttribute="bottom" secondItem="ohL-iv-rpY" secondAttribute="bottom" id="NoL-Os-7Fk"/>
-                            <constraint firstItem="TeN-iU-8qr" firstAttribute="leading" secondItem="WAY-Ct-BwJ" secondAttribute="leading" constant="15" id="Uhk-Q1-juR"/>
+                            <constraint firstItem="TeN-iU-8qr" firstAttribute="leading" secondItem="WAY-Ct-BwJ" secondAttribute="leading" constant="15" id="TdC-Nf-Tew"/>
                             <constraint firstItem="ohL-iv-rpY" firstAttribute="top" secondItem="rXq-cw-fLL" secondAttribute="top" id="x1O-xL-cpz"/>
                         </constraints>
                     </view>
@@ -149,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Wrg-lo-2x1" userLabel="Form Stack View">
-                                <rect key="frame" x="15" y="266.5" width="384" height="362.5"/>
+                                <rect key="frame" x="15" y="267" width="384" height="362.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IeD-Fm-MoV" userLabel="Email Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="44"/>
@@ -234,7 +238,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNS-FY-PFi">
-                                <rect key="frame" x="156" y="637.5" width="107" height="120"/>
+                                <rect key="frame" x="156" y="638" width="107" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="cdv-db-Cuy"/>
                                 </constraints>
