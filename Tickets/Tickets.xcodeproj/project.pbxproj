@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102959AD254F002800EFFFF5 /* CustomTextFieldwIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102959AC254F002800EFFFF5 /* CustomTextFieldwIcon.swift */; };
+		102959B0254F00DA00EFFFF5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102959AF254F00DA00EFFFF5 /* CustomButton.swift */; };
 		1EE853F8254C7EF20011287E /* AddTicketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE853F7254C7EF20011287E /* AddTicketsController.swift */; };
 		1EE853FC254CC74A0011287E /* TicketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE853FB254CC74A0011287E /* TicketRouter.swift */; };
 		2C06FE1B25423E2D00C20BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06FE1A25423E2D00C20BEA /* AppDelegate.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		102959AC254F002800EFFFF5 /* CustomTextFieldwIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldwIcon.swift; sourceTree = "<group>"; };
+		102959AF254F00DA00EFFFF5 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		1EE853F7254C7EF20011287E /* AddTicketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketsController.swift; sourceTree = "<group>"; };
 		1EE853FB254CC74A0011287E /* TicketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TicketRouter.swift; path = Tickets/APIs/TicketRouter.swift; sourceTree = SOURCE_ROOT; };
 		22CB7BF3A7CB7D2D32FE1C89 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				2C06FE342542432600C20BEA /* Card.swift */,
+				102959AC254F002800EFFFF5 /* CustomTextFieldwIcon.swift */,
+				102959AF254F00DA00EFFFF5 /* CustomButton.swift */,
 				2C8D5A1B254D9213002D3E22 /* TextField.swift */,
 			);
 			path = Views;
@@ -342,7 +348,9 @@
 				2C37F6052547F6100020B8E0 /* EnvironmentConfiguration.swift in Sources */,
 				1EE853FC254CC74A0011287E /* TicketRouter.swift in Sources */,
 				2C37F616254899140020B8E0 /* RegisterController.swift in Sources */,
+				102959B0254F00DA00EFFFF5 /* CustomButton.swift in Sources */,
 				2C37F5F5254778E30020B8E0 /* AuthenticationRouter.swift in Sources */,
+				102959AD254F002800EFFFF5 /* CustomTextFieldwIcon.swift in Sources */,
 				2C37F60D254815570020B8E0 /* Error.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
