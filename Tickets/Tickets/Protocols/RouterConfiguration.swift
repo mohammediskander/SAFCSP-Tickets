@@ -31,3 +31,13 @@ enum AccessType {
     case publicRoute
     case privateRoute
 }
+
+struct SuccessResponse: Codable {
+    let user: UserModel
+    let token: String
+    
+    enum CodingKeys: String, CodingKey {
+        case token = "__token"
+        case user = "user"
+    }
+}
