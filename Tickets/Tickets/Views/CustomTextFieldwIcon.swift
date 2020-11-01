@@ -127,6 +127,12 @@ class CustomTextFieldwIcon: UIView {
         underLineView.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 751), for: .vertical)
     }
     
+    // MARK: - vars
+    
+    var text: String {
+        textField.text ?? ""
+    }
+    
     // MARK: - Animation
     /// This method will shake the  view for a total of 0.3 seconds
     ///
